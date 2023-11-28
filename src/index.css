@@ -17,10 +17,26 @@ textarea {
     }
 
     .button {
-        @apply hover:shadow-button bg-accent text-white/80 p-3 flex items-center justify-center rounded-lg text-base;
+        @apply hover:shadow-button bg-accent text-white/80 p-3 flex items-center justify-center rounded-lg text-base disabled:bg-dark;
     }
 
     .sidebar-button {
         @apply button bg-dark-light w-full hover:bg-accent justify-start;
+    }
+
+    .action-button {
+        @apply text-white/80 hover:text-[tomato] hover:bg-dark p-2 rounded-md border-emerald-400;
+    }
+
+    .button-sm {
+        @apply flex cursor-pointer flex-row items-center justify-center rounded-md border border-solid border-white/10 bg-[transparent] bg-none px-3 py-2 text-sm font-medium text-white/90 outline-none hover:bg-white/10;
+    }
+
+    .chip {
+        @apply flex w-fit flex-row justify-start rounded-lg bg-purple-700 px-3 py-2 text-sm text-white/90;
+    }
+
+    .tag {
+        @apply rounded-md px-2 py-1 text-center text-xs font-medium;
     }
 }
