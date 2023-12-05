@@ -30,12 +30,12 @@ const Login = () => {
 
     const { state } = useLocation();
 
-    const [login, { isLoading, error, isError }] = useLoginMutation();
+    const [login, { isLoading }] = useLoginMutation();
 
     function onLogin({ username, password }: LoginSchemaType) {
         login({ username, password })
             .unwrap()
-            .then((result) => {
+            .then(() => {
                 reset();
             })
             .catch((error) => {

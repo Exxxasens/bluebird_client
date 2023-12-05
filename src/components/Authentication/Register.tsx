@@ -31,10 +31,10 @@ const Register = () => {
     } = useForm<RegisterSchemaType>({
         resolver: zodResolver(RegisterSchema),
         defaultValues: {
-            name: "Oleg123",
-            username: "Exxasens123",
-            email: "oleg-okatev123@hotmail.com",
-            password: "password123"
+            name: "",
+            username: "",
+            email: "",
+            password: ""
         }
     });
 
@@ -134,7 +134,7 @@ const Register = () => {
                     type="submit"
                     disabled={isLoading}
                 >
-                    Войти
+                    Зарегистрироваться
                 </button>
             </form>
         </div>

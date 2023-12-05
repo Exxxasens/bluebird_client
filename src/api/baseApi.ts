@@ -5,7 +5,6 @@ import {
     fetchBaseQuery
 } from "@reduxjs/toolkit/query/react";
 import { RootStore } from "../store";
-import { logout } from "../store/slices/authSlice";
 
 const baseQuery = fetchBaseQuery({
     baseUrl: "http://localhost:7777",

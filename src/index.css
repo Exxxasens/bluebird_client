@@ -24,6 +24,10 @@ textarea {
         @apply button bg-dark-light w-full hover:bg-accent justify-start;
     }
 
+    .sidebar-active {
+        @apply bg-accent;
+    }
+
     .action-button {
         @apply text-white/80 hover:text-[tomato] hover:bg-dark p-2 rounded-md border-emerald-400;
     }
